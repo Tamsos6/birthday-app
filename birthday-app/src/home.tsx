@@ -16,13 +16,14 @@ const Home: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <p>
-          Happy birthday! Let's go on a date night and get fat.
+          hello world
         </p>
         <div className ="button-container">
           <button className="button">Lets Gaur!</button>
           <button className="button"
             onMouseOver={handleHover}
-            style={{ top: `${buttonPosition.top}px`, left: `${buttonPosition.left}px`, transition : 'transform 5s ease', position : 'relative'}}
+            onClick={handleHover}
+            style={{ top: `${buttonPosition.top}px`, left: `${buttonPosition.left}px`, position : 'relative'}}
             >
               Yeah Naur!
           </button>
