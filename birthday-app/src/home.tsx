@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
@@ -12,6 +13,8 @@ const Home: React.FC = () => {
     setButtonPosition({ top: y, left: x });
   };
 
+  const navigate = useNavigate();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +22,10 @@ const Home: React.FC = () => {
           hello world
         </p>
         <div className ="button-container">
-          <button className="button">Lets Gaur!</button>
+          <button className="button"
+          onClick={ () => navigate("/date")}
+            >
+            Lets Gaur!</button>
           <button className="button"
             onMouseOver={handleHover}
             onClick={handleHover}
@@ -34,13 +40,3 @@ const Home: React.FC = () => {
 }
 
 export default Home;
-
-
-
-  // const resetButton = () => {
-  //   setButtonPosition(initialPosition);
-  // };
-
-  // useEffect(() => {
-  //   resetButton();
-  // }, []);

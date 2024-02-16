@@ -28,5 +28,9 @@
   margin-right: 30px;
   margin-left: 30px;
   transition: ease;
-  transition-duration: 0.5s; 
+  transition-duration: 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
 }
