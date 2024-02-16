@@ -12,7 +12,6 @@ const App: React.FC = () => (
       <Route path="/date" element={<Date />} />
       <Route path="/cuisine" element={<Cuisine />} />
       <Route path="/roulette" element={<Roulette />} />
-      <Route path="/japanese" element={<Roulette />} />
 		</Routes>
 	</BrowserRouter>
 );
