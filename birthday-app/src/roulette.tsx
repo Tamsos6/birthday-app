@@ -12,11 +12,13 @@ const Roulette: React.FC = () => {
 
   const [mustSpin, setMustSpin] = useState<boolean>(false);
   const [prizeNumber, setPrizeNumber] = useState<number>(0);
+  const [rouletteSpun, setRouletteSpun] = useState<boolean>(false);
 
   const handleSpin = () => {
     const newPrizeNumber = 0;
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
+    setRouletteSpun(false);
   };
 
   return (
@@ -29,15 +31,23 @@ const Roulette: React.FC = () => {
                 data={data}
                 onStopSpinning={() => {
                   setMustSpin(false);
+                  setRouletteSpun(true);
                 }}
                 spinDuration={0.05}
               />
-              <button 
-                onClick={handleSpin}
-                className="button"
-                >
-                  Spin Me!
-              </button>
+              <div className="button-container">
+                <button 
+                  onClick={handleSpin}
+                  className="button"
+                  >
+                    Spin Me!
+                </button>
+                {rouletteSpun && (
+                <button className="button">
+                  Let's go!
+                </button>
+                )}
+              </div>
         </header>
     </div>
   );
