@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
-  // const [initialPosition, setInitialPosition] = useState({ top: 0, left: 0 });
 
   const handleHover = () => {
     const x = Math.random() * 300;
@@ -18,9 +17,9 @@ const Home: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <h1>
           hello world
-        </p>
+        </h1>
         <div className ="button-container">
           <button className="button"
           onClick={ () => navigate("/date")}

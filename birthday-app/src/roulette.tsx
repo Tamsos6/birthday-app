@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Wheel } from 'react-custom-roulette'
+import { useNavigate, useLocation } from 'react-router-dom';
+
 
 
 const Roulette: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const date = location.state;
+
   const data = [
     { option: 'Japanese' },
     { option: 'Vietnamese' },
@@ -43,11 +49,20 @@ const Roulette: React.FC = () => {
                     Spin Me!
                 </button>
                 {rouletteSpun && (
-                <button className="button">
+                <button 
+                  className="button"
+                  onClick={ () => navigate("/japanese", { state: date}) }
+                  >
                   Let's go!
                 </button>
                 )}
               </div>
+              { rouletteSpun && (
+                <p >
+                  Splendid choice - I love Japanese as well!
+                </p>
+                )
+              }
         </header>
     </div>
   );

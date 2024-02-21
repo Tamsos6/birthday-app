@@ -18,7 +18,7 @@ const Date: React.FC = () => {
   return (
     <div>
         <header className="App-header">
-            <h1>Hello, World!</h1>
+            <h1 >Thank you for consenting ... now, when are you free?</h1>
             <Calendar onClickDay={handleDate} value={selectedDate}/>
         </header>
     </div>
