@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
+import bts from './assets/home-gif.gif'
 import './App.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <h1>
-          hello world
+          Do you wanna go on a birthday date night?
         </h1>
         <div className ="button-container">
           <button className="button"
@@ -33,6 +34,7 @@ const Home: React.FC = () => {
               Yeah Naur!
           </button>
         </div>
+        <img src={bts} style={{ width: "20%", height: "auto" }} alt="bts"/>
       </header>
     </div>
   );

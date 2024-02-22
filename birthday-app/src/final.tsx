@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { useNavigate, useLocation } from 'react-router-dom';
+import couple from './couple-pic.jpg';
 
 
 const Final: React.FC = () => {
@@ -19,13 +20,11 @@ const Final: React.FC = () => {
 	return (
     <div>
         <header className="App-header">
-            <h1>Confirmed</h1>
-            <p>
-              {combinedState.selectedRestaurant}
-            </p>
-            <p>
-              {combinedState.date.toString().split(" ").slice(0,3).join(" ")}
-            </p>
+            <h1 style={{ paddingBottom: "1px" }}>Confirmed</h1>
+            <h2 style={{ paddingBottom: "50px" }}>
+              See you at {combinedState.selectedRestaurant} on {combinedState.date.toString().split(" ").slice(0,3).join(" ")}!
+            </h2>
+            <img src={couple} style={{ width: "25%", height: "auto" }} alt="couple" />
         </header>
     </div>
   );

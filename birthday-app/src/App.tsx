@@ -4,7 +4,10 @@ import Home from './home';
 import Date from './date';
 import Cuisine from './cuisine'
 import Roulette from './roulette'
-import Japanese from './Japanese'
+import Asian from './Asian'
+import Australian from './Australian'
+import European from './European'
+import Other from './Other'
 import Final from './final'
 
 const App: React.FC = () => (
@@ -14,7 +17,10 @@ const App: React.FC = () => (
 			<Route path="/date" element={<Date />} />
 			<Route path="/cuisine" element={<Cuisine />} />
 			<Route path="/roulette" element={<Roulette />} />
-	  	<Route path="/japanese"element={<Japanese />} />
+	  		<Route path="/Asian"element={<Asian />} />
+			<Route path="/Australian"element={<Australian />} />
+			<Route path="/European"element={<European />} />
+			<Route path="/Other"element={<Other />} />
 			<Route path="/final"element={<Final />} />
 		</Routes>
 	</BrowserRouter>

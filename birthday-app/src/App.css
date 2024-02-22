@@ -3,7 +3,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,12 +18,16 @@
   text-align: center;
   font-size: 50px;
   padding-bottom: 30px;
+  color: #3F3F3F;
+  font-family: 'Nunito';
 }
 
 .App-header h2 {
   text-align: center;
   font-size: 25px;
-  /* padding-bottom: 30px; */
+  padding-bottom: 110px;
+  color: #3F3F3F;
+  font-family: 'Nunito';
 }
 
 .rest-container {
@@ -32,17 +37,21 @@
 
 .button-container {
   display: flex;
-  padding: 15px 32px;
+  padding: 0px 100px;
 }
 
 .button {
-  background-color: #FFB6C1;
-  color: white;
+  /* background-color: #FFB6C1; */
+  background-color: #FFe5EC;
+  color: #3F3F3F;
   text-align: center;
   font-size: 16px;
-  border-radius: 10px;
-  width: 180px;
-  height: 60px;
+  font-family: 'Nunito';
+  font-weight: bolder;
+  border : none;
+  border-radius: 20px;
+  width: 170px;
+  height: 70px;
   margin-right: 30px;
   margin-left: 30px;
   transition: ease;
@@ -50,5 +59,14 @@
 }
 
 .button:hover {
+  cursor: pointer;
+}
+
+.cuisine-image {
+  width: auto;
+  height: 150px;
+}
+
+.cuisine-image:hover {
   cursor: pointer;
 }

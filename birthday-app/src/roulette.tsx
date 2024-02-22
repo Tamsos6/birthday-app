@@ -11,9 +11,10 @@ const Roulette: React.FC = () => {
   const date = location.state;
 
   const data = [
-    { option: 'Japanese' },
-    { option: 'Vietnamese' },
-    { option: 'Chinese' },
+    { option: 'Asian' },
+    { option: 'Australian' },
+    { option: 'European' },
+    { option: 'Other' }
   ];
 
   const [mustSpin, setMustSpin] = useState<boolean>(false);
@@ -30,8 +31,13 @@ const Roulette: React.FC = () => {
   return (
     <div>
         <header className="App-header">
-            <h1>Send it to the gods</h1>
+            <h1 style={{ paddingBottom: "0px"}}>Let the gods pick</h1>
               <Wheel
+                backgroundColors={['#daeaf6', '#e8dff5', '#fcf4dd', '#ddedea']}
+                outerBorderWidth={1}
+                innerBorderWidth={1}
+                radiusLineWidth={1}
+                fontFamily='Nunito'
                 mustStartSpinning={mustSpin}
                 prizeNumber={prizeNumber}
                 data={data}
@@ -41,7 +47,7 @@ const Roulette: React.FC = () => {
                 }}
                 spinDuration={0.05}
               />
-              <div className="button-container">
+              <div className="button-container" style={{ paddingTop: "40px"}}>
                 <button 
                   onClick={handleSpin}
                   className="button"
@@ -51,18 +57,18 @@ const Roulette: React.FC = () => {
                 {rouletteSpun && (
                 <button 
                   className="button"
-                  onClick={ () => navigate("/japanese", { state: date}) }
+                  onClick={ () => navigate("/Asian", { state: date}) }
                   >
-                  Let's go!
+                  Let's gaur!
                 </button>
                 )}
               </div>
-              { rouletteSpun && (
-                <p >
-                  Splendid choice - I love Japanese as well!
-                </p>
+              {/* { rouletteSpun && (
+                <h2 style={{ paddingTop : "30px"}} >
+                  Splendid choice - I love Asian cuisine as well!
+                </h2>
                 )
-              }
+              } */}
         </header>
     </div>
   );
