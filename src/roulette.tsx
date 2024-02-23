@@ -57,7 +57,7 @@ const Roulette: React.FC = () => {
                 {rouletteSpun && (
                 <button 
                   className="button"
-                  onClick={ () => navigate("/Asian", { state: date}) }
+                  onClick={ () => navigate("/birthday-app/Asian", { state: date}) }
                   >
                   Let's gaur!
                 </button>

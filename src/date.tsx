@@ -12,7 +12,7 @@ const Date: React.FC = () => {
 
   const handleDate = (date: Date) => {
     setSelectedDate(date);
-    navigate('/cuisine', { state: date });
+    navigate('/birthday-app/cuisine', { state: date });
   };
 
   return (

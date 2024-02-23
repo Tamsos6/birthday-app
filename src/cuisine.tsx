@@ -18,25 +18,25 @@ const Cuisine: React.FC = () => {
             <h1 style={{ paddingBottom: "80px" }}>Pick cuisine!</h1>
             <div className="button-container">
               <div className="rest-container">
-                <img src={australian} alt="australian" className="cuisine-image" onClick={ () => navigate("/Australian", { state: date}) }/>
+                <img src={australian} alt="australian" className="cuisine-image" onClick={ () => navigate("/birthday-app/Australian", { state: date}) }/>
                 <h2>Australian</h2>
               </div>
               <div className="rest-container">
-                <img src={asian} alt="Asian" className="cuisine-image" onClick={ () => navigate("/Asian", { state: date}) }/>
+                <img src={asian} alt="Asian" className="cuisine-image" onClick={ () => navigate("/birthday-app/Asian", { state: date}) }/>
                 <h2>Asian</h2>
               </div>
               <div className="rest-container">
-                <img src={european} alt="european" className="cuisine-image" onClick={ () => navigate("/European", { state: date}) }/>
+                <img src={european} alt="european" className="cuisine-image" onClick={ () => navigate("/birthday-app/European", { state: date}) }/>
                 <h2>European</h2>
               </div>
               <div className="rest-container">
-                <img src={other} alt="other" className="cuisine-image" style={{ paddingLeft : "60px"}} onClick={ () => navigate("/Other", { state: date}) }/>
+                <img src={other} alt="other" className="cuisine-image" style={{ paddingLeft : "60px"}} onClick={ () => navigate("/birthday-app/Other", { state: date}) }/>
                 <h2 style={{ paddingLeft : "60px"}}>Other</h2>
               </div>
             </div>
             <button
                 className='button'
-                onClick={ () => navigate("/roulette", { state: date})}
+                onClick={ () => navigate("/birthday-app/roulette", { state: date})}
                 style={{ fontSize : "20px", height : "80px", width : "180px" }}
                 >
                   I Dont Knaur!

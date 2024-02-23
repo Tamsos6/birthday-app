@@ -5,7 +5,7 @@ import asian from './asian-pic.png';
 import ito from './assets/ito.png';
 
 
-const European: React.FC = () => {
+const Other: React.FC = () => {
   const navigate = useNavigate();
   const [restaurant, setRestaurant] = useState<string | null>(null);
 
@@ -15,7 +15,7 @@ const European: React.FC = () => {
   const handleRestaurant = (selectedRestaurant: string) => {
     setRestaurant(selectedRestaurant);
     const combinedState = { selectedRestaurant, date}
-    navigate('/final', { state: combinedState });
+    navigate('/birthday-app/final', { state: combinedState });
     // console.log(combinedState);
   };
   
@@ -58,7 +58,7 @@ const European: React.FC = () => {
   );
 };
 
-export default European;
+export default Other;
 
 
 

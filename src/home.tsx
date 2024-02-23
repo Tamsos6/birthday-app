@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         </h1>
         <div className ="button-container">
           <button className="button"
-          onClick={ () => navigate("/date")}
+          onClick={ () => navigate("/birthday-app/date")}
             >
             Lets Gaur!</button>
           <button className="button"
