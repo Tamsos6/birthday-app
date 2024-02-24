@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/birthday-app/static/css/main.71fbec12.css",
-    "main.js": "/birthday-app/static/js/main.d7efada7.js",
+    "main.css": "/birthday-app/static/css/main.be5cacdc.css",
+    "main.js": "/birthday-app/static/js/main.4a58da2c.js",
     "static/js/592.39eced9c.chunk.js": "/birthday-app/static/js/592.39eced9c.chunk.js",
     "static/media/other.gif": "/birthday-app/static/media/other.ebe37d15e326047c3259.gif",
     "static/media/asian.gif": "/birthday-app/static/media/asian.565056f595ad6e372c08.gif",
     "static/media/european.gif": "/birthday-app/static/media/european.fb46f51f2f5d8726b40e.gif",
     "static/media/home-gif.gif": "/birthday-app/static/media/home-gif.9abf19b00450122926d7.gif",
     "static/media/couple-pic.jpg": "/birthday-app/static/media/couple-pic.748c268752d584d03cf1.jpg",
+    "static/media/soul.png": "/birthday-app/static/media/soul.3fafa99e25173b15c3ef.png",
     "static/media/ito.png": "/birthday-app/static/media/ito.d3fc8eb51c0cde578b5f.png",
-    "static/media/asian-pic.png": "/birthday-app/static/media/asian-pic.dcc3ec6a2f40f6678474.png",
+    "static/media/jazushi.png": "/birthday-app/static/media/jazushi.8756f11afc35fc389ac9.png",
+    "static/media/lana.png": "/birthday-app/static/media/lana.9156017e2d4849dab3a3.png",
     "static/media/australian.gif": "/birthday-app/static/media/australian.b3db708e500e99432246.gif",
+    "static/media/leo.png": "/birthday-app/static/media/leo.5c94e0fff530e84ccfb8.png",
+    "static/media/gidley.png": "/birthday-app/static/media/gidley.8862ca84d0ff026a14b8.png",
+    "static/media/boy.png": "/birthday-app/static/media/boy.9e34c44a3874c6075c6a.png",
     "index.html": "/birthday-app/index.html",
-    "main.71fbec12.css.map": "/birthday-app/static/css/main.71fbec12.css.map",
-    "main.d7efada7.js.map": "/birthday-app/static/js/main.d7efada7.js.map",
+    "main.be5cacdc.css.map": "/birthday-app/static/css/main.be5cacdc.css.map",
+    "main.4a58da2c.js.map": "/birthday-app/static/js/main.4a58da2c.js.map",
     "592.39eced9c.chunk.js.map": "/birthday-app/static/js/592.39eced9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71fbec12.css",
-    "static/js/main.d7efada7.js"
+    "static/css/main.be5cacdc.css",
+    "static/js/main.4a58da2c.js"
   ]
 }
