@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import { useNavigate, useLocation } from 'react-router-dom';
-import asian from './asian-pic.png';
-import ito from './assets/ito.png';
+import leo from './assets/leo.png';
+import franca from './assets/franca.png';
+import armorica from './assets/armorica.png';
+import lana from './assets/lana.png';
 
 
 const European: React.FC = () => {
@@ -16,40 +18,39 @@ const European: React.FC = () => {
     setRestaurant(selectedRestaurant);
     const combinedState = { selectedRestaurant, date}
     navigate('/birthday-app/final', { state: combinedState });
-    // console.log(combinedState);
   };
   
   return (
     <div>
         <header className="App-header">
-            <h1>Asian</h1>
-          <div className="button-container">
+            <h1>European</h1>
+          <div className="button-container" style={{ display: "flex", justifyContent: "space-around", width: "60%", textAlign: "center" }}>
             <div className="rest-container">
-              <p>Ito Restaurant - Surry Hills</p>
-              <img src={ito} alt="Asian" className="cuisine-image"   onClick={() => window.location.href = "https://cdn.sanity.io/files/q60682qe/production/ff8ba178c0e1937f3cc659d0c2b5a37a5f6fcb96.pdf/ITO%20A%20la%20Carte%20Menu_January2024_online.pdf"} />
-              <button className="button" onClick={ () => handleRestaurant("Ito Restaurant")} >
-                This option
+              <h3>Restaurant Leo - Wynyard</h3>
+              <img src={leo} alt="Asian" className="cuisine-image" style={{ width: "100px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://www.restaurantleo.com.au/", "_blank")} />
+              <button className="button" onClick={ () => handleRestaurant("Restaurant Leo")} >
+                Select Me!
               </button>
             </div>
             <div className="rest-container">
-              <p>Jazzushi - Surry Hills</p>
-              <img src={asian} alt="Asian" className="cuisine-image"/>
-              <button className="button" onClick={ () => handleRestaurant("Jazzushi")} >
-                This option
+              <h3>Franca - Potts Point</h3>
+              <img src={franca} alt="Asian" className="cuisine-image" style={{ width: "230px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://francabrasserie.com.au/", "_blank")} />
+              <button className="button" onClick={ () => handleRestaurant("Franca")} >
+                Select Me!
               </button>
             </div>
             <div className="rest-container">
-              <p>Jazzushi - Surry Hills</p>
-              <img src={asian} alt="Asian" className="cuisine-image"/>
-              <button className="button" onClick={ () => handleRestaurant("Jazzushi")} >
-                This option
+              <h3>Armorica - Surry Hills</h3>
+              <img src={armorica} alt="Asian" className="cuisine-image" style={{ width: "150px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://armorica.com.au/", "_blank")}/>
+              <button className="button" onClick={ () => handleRestaurant("Armorica")} >
+                Select Me!
               </button>
             </div>
             <div className="rest-container">
-              <p>Jazzushi - Surry Hills</p>
-              <img src={asian} alt="Asian" className="cuisine-image"/>
-              <button className="button" onClick={ () => handleRestaurant("Jazzushi")} >
-                This option
+              <h3>Lana - Circular Quay</h3>
+              <img src={lana} alt="Asian" className="cuisine-image" style={{ width: "100px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://lana.sydney/", "_blank")}/>
+              <button className="button" onClick={ () => handleRestaurant("Lana")} >
+                Select Me!
               </button>
             </div>
           </div>
