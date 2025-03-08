@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import { useNavigate, useLocation } from 'react-router-dom';
-import leo from './assets/leo.png';
+import felix from './assets/felix.png';
 import franca from './assets/franca.png';
-import armorica from './assets/armorica.png';
+import bou from './assets/bou.png';
 import lana from './assets/lana.png';
 
 
@@ -26,9 +26,9 @@ const European: React.FC = () => {
             <h1>European</h1>
           <div className="button-container" style={{ display: "flex", justifyContent: "space-around", width: "60%", textAlign: "center" }}>
             <div className="rest-container">
-              <h3>Restaurant Leo - Wynyard</h3>
-              <img src={leo} alt="Asian" className="cuisine-image" style={{ width: "100px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://www.restaurantleo.com.au/", "_blank")} />
-              <button className="button" onClick={ () => handleRestaurant("Restaurant Leo")} >
+              <h3>Felix - Wynyard</h3>
+              <img src={felix} alt="Asian" className="cuisine-image" style={{ width: "100px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://merivale.com/venues/felix/menu/", "_blank")} />
+              <button className="button" onClick={ () => handleRestaurant("Felix")} >
                 Select Me!
               </button>
             </div>
@@ -40,9 +40,9 @@ const European: React.FC = () => {
               </button>
             </div>
             <div className="rest-container">
-              <h3>Armorica - Surry Hills</h3>
-              <img src={armorica} alt="Asian" className="cuisine-image" style={{ width: "150px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://armorica.com.au/", "_blank")}/>
-              <button className="button" onClick={ () => handleRestaurant("Armorica")} >
+              <h3>Bouillon L'Entrecote - Circular Quay</h3>
+              <img src={bou} alt="Asian" className="cuisine-image" style={{ width: "150px", height: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://bouillonlentrecote.com.au/menus/#menus", "_blank")}/>
+              <button className="button" onClick={ () => handleRestaurant("Bouillon L'Entrecote")} >
                 Select Me!
               </button>
             </div>

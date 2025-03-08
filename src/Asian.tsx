@@ -4,8 +4,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import asian from './asian-pic.png';
 import ito from './assets/ito.png';
 import jazushi from './assets/jazushi.png';
-import soul from './assets/soul.png';
-import boy from './assets/boy.png';
+import radio from './assets/radio.png';
+import firepop from './assets/firepop.png';
 
 
 const Asian: React.FC = () => {
@@ -41,16 +41,16 @@ const Asian: React.FC = () => {
               </button>
             </div>
             <div className="rest-container">
-              <h3>Kinh Boy - Barangaroo</h3>
-              <img src={boy} alt="Asian" className="cuisine-image" style={{ paddingBottom: "30px" }} onClick={() => window.open("https://kinhboy.com.au/", "_blank")}/>
-              <button className="button" onClick={ () => handleRestaurant("Kinh Boy")} >
+              <h3>Firepop - Enmore</h3>
+              <img src={firepop} alt="Asian" className="cuisine-image" style={{ paddingBottom: "30px" }} onClick={() => window.open("https://www.firepop.com.au/menu", "_blank")}/>
+              <button className="button" onClick={ () => handleRestaurant("Firepop")} >
                 Select Me!
               </button>
             </div>
             <div className="rest-container">
-              <h3>Soul Dining - Wynyard</h3>
-              <img src={soul} alt="Asian" className="cuisine-image" style={{ paddingBottom: "30px" }} onClick={() => window.open("https://www.souldining.com.au/food-menu", "_blank")}/>
-              <button className="button" onClick={ () => handleRestaurant("Soul Dining")} >
+              <h3>Island Radio - Redfern</h3>
+              <img src={radio} alt="Asian" className="cuisine-image" style={{ paddingBottom: "30px" }} onClick={() => window.open("https://www.islandradio.sydney/menu", "_blank")}/>
+              <button className="button" onClick={ () => handleRestaurant("Island Radio")} >
                 Select Me!
               </button>
             </div>

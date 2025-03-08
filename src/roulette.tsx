@@ -18,11 +18,11 @@ const Roulette: React.FC = () => {
   ];
 
   const [mustSpin, setMustSpin] = useState<boolean>(false);
-  const [prizeNumber, setPrizeNumber] = useState<number>(0);
+  const [prizeNumber, setPrizeNumber] = useState<number>(3);
   const [rouletteSpun, setRouletteSpun] = useState<boolean>(false);
 
   const handleSpin = () => {
-    const newPrizeNumber = 0;
+    const newPrizeNumber = 3;
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
     setRouletteSpun(false);
@@ -57,7 +57,7 @@ const Roulette: React.FC = () => {
                 {rouletteSpun && (
                 <button 
                   className="button"
-                  onClick={ () => navigate("/birthday-app/Asian", { state: date}) }
+                  onClick={ () => navigate("/birthday-app/Other", { state: date}) }
                   >
                   Let's gaur!
                 </button>

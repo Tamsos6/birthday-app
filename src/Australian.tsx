@@ -3,7 +3,7 @@ import './App.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import nomad from './assets/nomad.png';
 import gidley from './assets/gidley.png';
-import rockpool from './assets/rockpool.png';
+import arthur from './assets/arthur.png';
 
 
 const Australian: React.FC = () => {
@@ -39,9 +39,9 @@ const Australian: React.FC = () => {
               </button>
             </div>
             <div className="rest-container" style={{ paddingLeft: "150px"}}>
-              <h3>Rockpool Bar and Grill - Wynyard</h3>
-              <img src={rockpool} alt="Asian" className="cuisine-image" style={{ width: "150", height: "auto", display: "block", margin: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://rockpoolbarandgrill.com.au/", "_blank")}/>
-              <button className="button" onClick={ () => handleRestaurant("Rockpool Bar and Grill")} >
+              <h3>Arthur - Surry Hills</h3>
+              <img src={arthur} alt="Asian" className="cuisine-image" style={{ width: "150", height: "auto", display: "block", margin: "auto", paddingBottom: "30px" }} onClick={() => window.open("https://www.arthurrestaurant.com/food-beverage", "_blank")}/>
+              <button className="button" onClick={ () => handleRestaurant("Arthur")} >
                 Select Me!
               </button>
             </div>
